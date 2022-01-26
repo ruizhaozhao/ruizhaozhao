@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app setup should render correctly 1`] = `
+Array [
+  <StatusBar
+    barStyle="dark-content"
+  />,
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "flex": 1,
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#0066cc",
+          "fontSize": 30,
+          "fontWeight": "bold",
+          "paddingTop": 40,
+          "textAlign": "center",
+        }
+      }
+      testID="titleLabel"
+    >
+      Okta + React Native
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "marginTop": 20,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderRadius": 40,
+            "height": 40,
+            "marginBottom": 10,
+            "marginHorizontal": 10,
+            "marginTop": 10,
+          }
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={Object {}}
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID="loginButton"
+        >
+          <View
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#007AFF",
+                    "fontSize": 18,
+                    "margin": 8,
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Login
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <ScrollView
+      contentInsetAdjustmentBehavior="automatic"
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+    >
+      <Text
+        testID="descriptionBox"
+      />
+    </ScrollView>
+  </RCTSafeAreaView>,
+]
+`;
