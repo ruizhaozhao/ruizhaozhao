@@ -27,7 +27,7 @@ import Error from './components/Error';
 export default class LoginScreen extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       progress: false,
       username: '',
@@ -40,11 +40,11 @@ export default class LoginScreen extends React.Component {
   }
 
   reset() {
-    this.setState({ 
-      progress: false, 
-      username: '', 
-      password: '',
-      error: '' 
+    this.setState({
+      progress: false,
+      username: 'mock11@happymoney.com',
+      password: 'Test1234@',
+      error: ''
     });
   }
 
@@ -57,22 +57,22 @@ export default class LoginScreen extends React.Component {
 
     const { username, password } = this.state;
     const { navigation } = this.props;
-    
+
     signIn({ username, password })
       .then(_token => {
-        this.setState({ 
-          progress: false, 
-          username: '', 
+        this.setState({
+          progress: false,
+          username: '',
           password: '',
-          error: '' 
+          error: ''
         }, () => navigation.navigate('Profile'));
       })
       .catch(error => {
         this.setState({
           progress: false,
-          username: '', 
-          password: '', 
-          error: error.message 
+          username: '',
+          password: '',
+          error: error.message
         });
       });
   }
