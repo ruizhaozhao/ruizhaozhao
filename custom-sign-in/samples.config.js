@@ -22,8 +22,8 @@ import { CLIENT_ID, REDIRECT_URI, LOGOUT_REDIRECT_URI, ISSUER } from '@env';
 export default {
   oidc: {
     clientId: '0oadnoldiyrydyj4z696', // e.g.: `a0abcEf0gH123ssJS4o5`
-    redirectUri: REDIRECT_URI, // e.g.: `com.okta.example:/callback`
-    endSessionRedirectUri: LOGOUT_REDIRECT_URI, // e.g.: com.okta.example:/logout
+    redirectUri: 'com.okta.example:/callback', // e.g.: `com.okta.example:/callback`
+    endSessionRedirectUri: 'com.okta.example:/logoutCallback', // e.g.: com.okta.example:/logout
     discoveryUri: 'https://qqruizhao.okta.com/oauth2/default', // e.g.: https://dev-1234.okta.com/oauth2/default
     scopes: ['openid', 'profile', 'offline_access'],
     requireHardwareBackedKeyStore: false,
