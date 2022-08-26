@@ -42,8 +42,8 @@ export default class LoginScreen extends React.Component {
   reset() {
     this.setState({
       progress: false,
-      username: 'mock11@happymoney.com',
-      password: 'Test1234@',
+      username: 'qa+dev_1018210dcmc@happymoney.com',
+      password: 'Givemeoffer123',
       error: ''
     });
   }

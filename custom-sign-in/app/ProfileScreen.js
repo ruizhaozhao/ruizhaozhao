@@ -40,7 +40,7 @@ export default class ProfileScreen extends React.Component {
 
   componentDidMount() {
     this.props.navigation.setOptions({
-      headerLeft: () => 
+      headerLeft: () =>
         <Text onPress={this.logout} style={styles.logoutButton}>Logout</Text>
     });
 
@@ -58,6 +58,7 @@ export default class ProfileScreen extends React.Component {
     this.setState({ progress: false });
     getAccessToken()
       .then(token => {
+        console.log(token.access_token);
         this.setState({
           progress: false,
           accessToken: token.access_token
